@@ -1,152 +1,173 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Linked Data-Fu</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
-    <link rel="script" href="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"/>
-    <link rel="stylesheet" href="stylesheets/jumbotron.css"/>
-    <style type="text/css">
+<head>
+<title>Linked Data-Fu</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+<link rel="script"
+	href="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" />
+<link rel="stylesheet" href="stylesheets/jumbotron.css" />
+<style type="text/css">
 @media screen and (min-width: 768px) {
-  .center {
-    padding-right: 60px;
-    padding-left: 60px;
-  }
+	.center {
+		padding-right: 60px;
+		padding-left: 60px;
+	}
 }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-	    <li role="presentation"><a href="#features">Features</a></li>
-            <li role="presentation"><a href="#publications">Publications</a></li>
-            <li role="presentation"><a href="#team">Team</a></li>
-	    <li role="presentation"><a href="#ack">Acknowledgements</a></li>
-	    <li role="presentation"><a href="#news">News</a></li>
-          </ul>
-        </nav>
-      </div>
-      
-      <div class="jumbotron">
-	<h1>Welcome to Linked Data-Fu!</h1>
-	
-	<p class="lead">
-	  An end-to-end data processing system for data integration and system interoperation with Linked Data.
-	</p>
-	
-	<p>
-	  Linked Programs are Notation3-based specifications for accessing and processing Linked Data, based on logical rules and production rules.
-	  Linked Data-Fu is an engine for evaluating Linked Programs.
-	</p>
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<nav>
+			<ul class="nav nav-pills pull-right">
+				<li role="presentation" class="active"><a href="#">Home</a></li>
+				<li role="presentation"><a href="#features">Features</a></li>
+				<li role="presentation"><a href="#publications">Publications</a></li>
+				<li role="presentation"><a href="#team">Team</a></li>
+				<li role="presentation"><a href="#ack">Acknowledgements</a></li>
+				<li role="presentation"><a href="#news">News</a></li>
+			</ul>
+			</nav>
+		</div>
 
-	<p><a class="btn btn-lg btn-success" href="mailto:felix.leif.keppmann@kit.edu?subject=Linked Data-Fu Download&body=Hello, I would like to test Linked Data-Fu." role="button">Request download</a></p>
+		<div class="jumbotron">
+			<h1>Welcome to Linked Data-Fu!</h1>
 
-	<!--
+			<p class="lead">An end-to-end data processing system for data
+				integration and system interoperation with Linked Data.</p>
+
+			<p>Linked Programs are Notation3-based specifications for
+				accessing and processing Linked Data, based on logical rules and
+				production rules. Linked Data-Fu is an engine for evaluating Linked
+				Programs.</p>
+
+			<p>
+				<a class="btn btn-lg btn-success"
+					href="mailto:felix.leif.keppmann@kit.edu?subject=Linked Data-Fu Download&body=Hello, I would like to test Linked Data-Fu."
+					role="button">Request download</a>
+			</p>
+
+			<!--
 	<p class="view"><a href="https://github.com/aharth/linked-data-fu">View the Project on GitHub aharth/linked-data-fu</a></p>
 	-->
-      </div>
+		</div>
 
-      <div class="center">
-      <a name="features"></a>
-      <h2>Features</h2>
+		<div class="center">
+			<a name="features"></a>
+			<h2>Features</h2>
 
-      <div class="row">
-	<div class="col-md-4">
-	  <h3>Querying</h3>
-	  Linked Data-Fu includes a streaming query engine for conjunctive queries (Basic Graph Pattern queries) over RDF data.
+			<div class="row">
+				<div class="col-md-4">
+					<h3>Querying</h3>
+					Linked Data-Fu includes a streaming query engine for conjunctive
+					queries (Basic Graph Pattern queries) over RDF data.
+				</div>
+				<div class="col-md-4">
+					<h3>Data Access</h3>
+					Linked Data-Fu supports high-frequency data access and manipulation
+					via HTTP CRUD methods (Linked Data and Linked Data Platform).
+					Request rules specify how to access data and traverse links.
+					High-frequency access is suitable for Internet of Things scenarios.
+				</div>
+				<div class="col-md-4">
+					<h3>Reasoning</h3>
+					Linked Data-Fu provides functionality for large-scale data
+					integration, including reasoning with ontologies. Deduction rules
+					specify how to derive new data from existing data. Reasoning
+					supports the integration of data from multiple sources.
+				</div>
+			</div>
+
+			<a name="publications"></a>
+			<h2>Publications</h2>
+
+			<ul>
+				<li>Andreas Harth, Craig Knoblock, Steffen Stadtmüller, Rudi
+					Studer and Pedro Szekely. "<a
+					href="http://ceur-ws.org/Vol-1034/HarthEtAl_COLD2013.pdf">On-the-fly
+						Integration of Static and Dynamic Linked Data</a>". Fourth
+					International Workshop on Consuming Linked Data (COLD 2013).
+					Co-located with ISWC 2013, Sydney, Australia.
+				</li>
+				<li>Steffen Stadtmüller, Sebastian Speiser, Andreas Harth, Rudi
+					Studer. "<a
+					href="http://www2013.wwwconference.org/proceedings/p1225.pdf">Data-Fu:
+						A Language and an Interpreter for Interaction with Read/Write
+						Linked Data</a>". WWW 2013, Rio de Janerio, Brasil. <em>Please
+						note that we have renamed the system to "Linked Data-Fu" to avoid
+						name clashes with other projects.</em>
+				</li>
+			</ul>
+
+			<a name="team"></a>
+			<h2>Team</h2>
+
+			<div class="row marketing">
+				<div class="col-lg-6">
+					<div>
+						<img class="img-thumbnail" width="79" alt="Andreas Harth"
+							src="http://www.aifb.kit.edu/images/thumb/a/a9/Andreas.jpg/158px-Andreas.jpg" />
+						Andreas Harth (lead)
+					</div>
+
+					<div>
+						<img class="img-thumbnail" width="79" alt="Sebastian Speiser"
+							src="http://www.aifb.kit.edu/images/thumb/e/eb/Sebastian_smaller.jpg/158px-Sebastian_smaller.jpg" />
+						Sebastian Speiser (retired)
+					</div>
+
+					<div>
+						<img class="img-thumbnail" width="79" alt="Benedikt Kämpgen"
+							src="http://www.aifb.kit.edu/images/c/c4/Benedikt_Kaempgen.JPG" />
+						Benedikt Kämpgen
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div>
+						<img class="img-thumbnail" width="79" alt="Steffen Stadtmüller"
+							src="http://www.aifb.kit.edu/images/thumb/1/17/S_Stadtm.jpg/158px-S_Stadtm.jpg" />
+						Steffen Stadtmüller
+					</div>
+
+					<div>
+						<img class="img-thumbnail" width="79" alt="Felix Leif Keppmann"
+							src="http://www.aifb.kit.edu/images/thumb/c/cb/Felix_Leif_Keppmann_-_Portrait.jpg/158px-Felix_Leif_Keppmann_-_Portrait.jpg" />
+						Felix Leif Keppmann
+					</div>
+				</div>
+			</div>
+
+			<a name="ack"></a>
+			<h2>Acknowledgements</h2>
+
+			<p>
+				Linked Data-Fu has been supported by the German Ministry for
+				Education and Research (project <a href="http://www.arvida.de/">ARVIDA</a>,
+				reference architecture for virtual services and applications), the
+				European Commission (FP7 project <a
+					href="http://www.ivision-project.eu/">i-VISION</a>, virtual
+				aircraft cockpit design) and the Office of Naval Research Global.
+			</p>
+
+			<a name="news"></a>
+			<h2>News</h2>
+
+			<dl>
+				<dt>2015-02-05</dt>
+				<dd>Beta program started.</dd>
+				<dt>2014-09-08</dt>
+				<dd>We are in the process of releasing a public version 1.0,
+					stay tuned!</dd>
+			</dl>
+
+			<footer class="footer"> <a href="mailto:harth@kit.edu">Contact</a>
+			</footer>
+		</div>
 	</div>
-        <div class="col-md-4">
-	  <h3>Data Access</h3>
-      	  Linked Data-Fu supports high-frequency data access and manipulation via HTTP CRUD methods (Linked Data and Linked Data Platform).
-	  Request rules specify how to access data and traverse links.
-	  High-frequency access is suitable for Internet of Things scenarios.
-	</div>
-	<div class="col-md-4">
-	  <h3>Reasoning</h3>
-	  Linked Data-Fu provides functionality for large-scale data integration, including reasoning with ontologies.
-	  Deduction rules specify how to derive new data from existing data.
-	  Reasoning supports the integration of data from multiple sources.
-	</div>
-      </div>
-	
-      <a name="publications"></a>
-      <h2>Publications</h2>
-      
-      <ul>
-	<li>
-	  Andreas Harth, Craig Knoblock, Steffen Stadtmüller, Rudi Studer and Pedro Szekely. "<a href="http://ceur-ws.org/Vol-1034/HarthEtAl_COLD2013.pdf">On-the-fly Integration of Static and Dynamic Linked Data</a>".  Fourth International Workshop on Consuming Linked Data (COLD 2013).  Co-located with ISWC 2013, Sydney, Australia.
-	</li>
-	<li>
-	  Steffen Stadtmüller, Sebastian Speiser, Andreas Harth, Rudi Studer.
-	  "<a href="http://www2013.wwwconference.org/proceedings/p1225.pdf">Data-Fu: A Language and an Interpreter for Interaction with Read/Write Linked Data</a>".
-	  WWW 2013, Rio de Janerio, Brasil.
-	  <em>Please note that we have renamed the system to "Linked Data-Fu" to avoid name clashes with other projects.</em>
-	</li>
-      </ul>
-      
-      <a name="team"></a>
-      <h2>Team</h2>
-
-      <div class="row marketing">
-	<div class="col-lg-6">
-	  <div>
-	    <img class="img-thumbnail" width="79" alt="Andreas Harth" src="http://www.aifb.kit.edu/images/thumb/a/a9/Andreas.jpg/158px-Andreas.jpg"/>
-	    Andreas Harth (lead)
-	  </div>
-
-	  <div>
-	    <img class="img-thumbnail" width="79" alt="Sebastian Speiser" src="http://www.aifb.kit.edu/images/thumb/e/eb/Sebastian_smaller.jpg/158px-Sebastian_smaller.jpg"/>
-      	    Sebastian Speiser (retired)
-	  </div>
-
-	  <div>
-	    <img class="img-thumbnail" width="79" alt="Benedikt Kämpgen" src="http://www.aifb.kit.edu/images/c/c4/Benedikt_Kaempgen.JPG"/>
-	    Benedikt Kämpgen
-	  </div>
-	</div>
-
-	<div class="col-lg-6">
-	  <div>
-	    <img class="img-thumbnail" width="79" alt="Steffen Stadtmüller" src="http://www.aifb.kit.edu/images/thumb/1/17/S_Stadtm.jpg/158px-S_Stadtm.jpg"/>
-	    Steffen Stadtmüller
-	  </div>
-	  
-	  <div>
-	    <img class="img-thumbnail" width="79" alt="Felix Leif Keppmann" src="http://www.aifb.kit.edu/images/thumb/c/cb/Felix_Leif_Keppmann_-_Portrait.jpg/158px-Felix_Leif_Keppmann_-_Portrait.jpg"/>
-	    Felix Leif Keppmann
-	  </div>
-	</div>
-      </div>
-      
-      <a name="ack"></a>
-      <h2>Acknowledgements</h2>
-      
-      <p>
-	Linked Data-Fu has been supported by the German Ministry for Education and Research (project <a href="http://www.arvida.de/">ARVIDA</a>, reference architecture for virtual services and applications), the European Commission (FP7 project <a href="http://www.ivision-project.eu/">i-VISION</a>, virtual aircraft cockpit design) and the Office of Naval Research Global.
-      </p>
-      
-      <a name="news"></a>
-      <h2>News</h2>
-       
-      <dl>
-	<dt>2015-02-05</dt>
-	<dd>
-	  Beta program started.
-	</dd>
-	<dt>2014-09-08</dt>
-	<dd>
-	  We are in the process of releasing a public version 1.0, stay tuned!
-	</dd>
-      </dl>
-      
-      <footer class="footer">
-	<a href="mailto:harth@kit.edu">Contact</a>
-      </footer>
-      </div>
-    </div> <!-- container -->
-  </body>
+	<!-- container -->
+</body>
 </html>
