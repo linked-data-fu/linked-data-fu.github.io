@@ -27,6 +27,7 @@
 				<li role="presentation"><a href="#mailinglist">Mailing List</a></li>
 				<li role="presentation"><a href="#publications">Publications</a></li>
 				<li role="presentation"><a href="#sources">Data Sources</a></li>
+				<li role="presentation"><a href="#faq">FAQ</a></li>
 				<li role="presentation"><a href="#team">Team</a></li>
 				<li role="presentation"><a href="#ack">Acknowledgements</a></li>
 				<li role="presentation"><a href="#news">News</a></li>
@@ -122,9 +123,11 @@
 						note that we have renamed the system to "Linked Data-Fu" to avoid
 						name clashes with other projects.</em>
 				</li>
+			  <li>Steffen Stadtmueller, Andreas Harth. "<a href="http://www.aifb.kit.edu/images/7/72/Towards_Data-driven_Programming_for_RESTful_Linked_Data.pdf">Towards Data-driven Programming for RESTful Linked Data</a>". First Workshop on Programming the Semantic Web, co-located with International Semantic Web Conference, 2012, Boston, MA, USA. (<a href="https://slideshare.net/SteffenStadtmller/toward-data-driven-programming">Slides</a>)
+			  </li>
 			</ul>
 
-						<a name="sources"></a>
+			<a name="sources"></a>
 			<h2>Data Sources</h2>
 
 			<p>
@@ -148,6 +151,20 @@
 			<li>@@@Your live Linked Data source here</li>
 		</ul>
 
+		<a name="faq"></a>
+		<h2>Frequently Asked Questions</h2>
+
+
+		<dl>
+		  <dt>Do you separate link traversal specifications from query procesing?</dt>
+		  <dd>Yes, we do.  Request rules can be used to specify link traversal, while a SPARQL query is evaluated on the resulting data in a streaming fashion.
+		    <a href="https://slideshare.net/SteffenStadtmller/toward-data-driven-programming">Since 2012</a>.
+		  </dd>
+		  <dt>I have read that Linked Data-Fu is doing remote procedure calls (RPCs).  Is this true?</dt>
+		  <dd> The head of request rules contains HTTP requests.  So you could include POST requests that do RPC-style interaction.
+		    However, we suggest to use state manipulation CRUD operations following the HTTP semantics. <a href="https://slideshare.net/SteffenStadtmller/toward-data-driven-programming">Since 2012</a>.
+		  </dd>
+		</dl>
 			<a name="team"></a>
 			<h2>Team</h2>
 
@@ -233,6 +250,8 @@
 			<h2>News</h2>
 
 			<dl>
+			  <dt>2017-03-37</dt>
+			  <dd>Added frequently asked questions.</dd>
 			  <dt>2017-01-31</dt>
 			  <dd>Added links to data sources.</dd>
 			  <dt>2016-05-20</dt>
