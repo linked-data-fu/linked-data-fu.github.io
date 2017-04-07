@@ -26,6 +26,8 @@
 				<li role="presentation"><a href="#features">Features</a></li>
 				<li role="presentation"><a href="#mailinglist">Mailing List</a></li>
 				<li role="presentation"><a href="#publications">Publications</a></li>
+				<li role="presentation"><a href="#sources">Data Sources</a></li>
+				<li role="presentation"><a href="#faq">FAQ</a></li>
 				<li role="presentation"><a href="#team">Team</a></li>
 				<li role="presentation"><a href="#ack">Acknowledgements</a></li>
 				<li role="presentation"><a href="#news">News</a></li>
@@ -41,8 +43,7 @@
 
 			<p>Linked Programs are Notation3-based specifications for
 				accessing and processing Linked Data, based on logical rules and
-				production rules. Ldfu is a system for evaluating Linked
-				Programs.</p>
+				production rules. You can evaluate Linked Programs with ldfu.</p>
 
 			<p>
 				<a class="btn btn-lg btn-success"
@@ -98,7 +99,11 @@
 			<h2>Publications</h2>
 
 			<ul>
-				<li>Felix Leif Keppmann, Tobias Käfer, Steffen Stadtmüller, René Schubotz and Andreas Harth. "<a
+			  <li>
+			    Andreas Harth, Tobias Käfer. "<a href="http://ceur-ws.org/Vol-1594/paper12.pdf">Towards Specification and Execution of Linked Systems</a>".
+			    28. GI-Workshop Grundlagen von Datenbanken, May 24 - 27, 2016, Nörten-Hardenberg, Germany.
+			  </li>
+			  <li>Felix Leif Keppmann, Tobias Käfer, Steffen Stadtmüller, René Schubotz and Andreas Harth. "<a
 					href="http://iswc2014.semanticweb.org/ceur-ws.org/Vol-1272/paper_149.pdf">High Performance Linked Data Processing for Virtual Reality Environments</a>". International Semantic Web Conference (Posters & Demos). ISWC 2014, Riva del Garda, Italy.
 				</li>
 				<li>Felix Leif Keppmann, Tobias Käfer, Steffen Stadtmüller, René Schubotz and Andreas Harth. "Integrating Highly Dynamic RESTful Linked Data APIs in a Virtual Reality Environment". International Symposium on Mixed and Augmented Reality (Posters & Demos). ISMAR 2014, Munich, Germany.
@@ -118,8 +123,48 @@
 						note that we have renamed the system to "Linked Data-Fu" to avoid
 						name clashes with other projects.</em>
 				</li>
+			  <li>Steffen Stadtmueller, Andreas Harth. "<a href="http://www.aifb.kit.edu/images/7/72/Towards_Data-driven_Programming_for_RESTful_Linked_Data.pdf">Towards Data-driven Programming for RESTful Linked Data</a>". First Workshop on Programming the Semantic Web, co-located with International Semantic Web Conference, 2012, Boston, MA, USA. (<a href="https://slideshare.net/SteffenStadtmller/toward-data-driven-programming">Slides</a>)
+			  </li>
 			</ul>
 
+			<a name="sources"></a>
+			<h2>Data Sources</h2>
+
+			<p>
+			  The list contains Linked Data sources with relatively high update frequencies.
+			</p>
+			<ul>
+			  <li><a href="http://openeanwrap.appspot.com/">Linked LA Metro</a>: Linked Data wrapper to the <a href="http://developer.metro.net/">Los Angeles Metro API</a> (live LA Metro data)</li>
+			  <ul>
+			      <li><a href="https://openeanwrap.appspot.com/routevehicles/720">Current positions of buses on line 720</a> (updated every few minutes)</li>
+			  </ul>
+			</li>
+			<li><a href="http://km.aifb.kit.edu/services/eventfulwrap/">Linked Eventful</a>: Linked Data wrapper to the <a href="http://api.eventful.com/">Eventful API</a> (live Eventful data)
+			  <ul>
+			    <li><a href="http://km.aifb.kit.edu/services/eventfulwrap/search?location=los+angeles">Events in Los Angeles</a> (updated every few hours)</li>
+			  </ul>
+			</li>
+			<li><a href="http://openeanwrap.appspot.com/">Linked Wikimapia</a>: Linked Data wrapper to <a href="http://wikimapia.org/">Wikimapia</a> (live Wikimapia data)</li>
+			<li><a href="http://osmwrap.appspot.com/">Linked OpenStreetMap</a>: Linked Data wrapper to the <a href="http://wiki.openstreetmap.org/wiki/API">OpenStreetMap API</a> (live OpenStreetMap data)</li>
+			<li><a href="http://km.aifb.kit.edu/services/crunchbase/">Linked CrunchBase</a>: Linked Data wrapper to <a href="http://data.crunchbase.com/">CrunchBase Data</a> (live CrunchBase data)</li>
+			<li><a href="http://km.aifb.kit.edu/services/lastfmwrap/">Linked LastFM</a>: Linked Data wrapper to <a href="http://last.fm/api/">Last.fm Web Services</a> (currently down)</li>
+			<li>@@@Your live Linked Data source here</li>
+		</ul>
+
+		<a name="faq"></a>
+		<h2>Frequently Asked Questions</h2>
+
+
+		<dl>
+		  <dt>Do you separate link traversal specifications from query procesing?</dt>
+		  <dd>Yes, we do.  Request rules can be used to specify link traversal, while a SPARQL query is evaluated on the resulting data in a streaming fashion.
+		    <a href="https://slideshare.net/SteffenStadtmller/toward-data-driven-programming">Since 2012</a>.
+		  </dd>
+		  <dt>I have read that Linked Data-Fu is doing remote procedure calls (RPCs).  Is this true?</dt>
+		  <dd> The head of request rules contains HTTP requests.  So you could include POST requests that do RPC-style interaction.
+		    However, we suggest to use state manipulation CRUD operations following the HTTP semantics. <a href="https://slideshare.net/SteffenStadtmller/toward-data-driven-programming">Since 2012</a>.
+		  </dd>
+		</dl>
 			<a name="team"></a>
 			<h2>Team</h2>
 
@@ -133,13 +178,6 @@
 						<img class="img-thumbnail" width="79" alt="Andreas Harth"
 							src="http://www.aifb.kit.edu/images/thumb/a/a9/Andreas.jpg/158px-Andreas.jpg" /><br/>
 						Andreas Harth (lead)
-					</div>
-			  </li>
-			  <li>
-					<div>
-						<img class="img-thumbnail" width="79" alt="Steffen Stadtmüller"
-							src="http://www.aifb.kit.edu/images/thumb/1/17/S_Stadtm.jpg/158px-S_Stadtm.jpg" /><br/>
-						Steffen Stadtmüller
 					</div>
 			  </li>
 			  <li>
@@ -158,6 +196,15 @@
 			  </li>
 			  <li>
 					<div>
+						<img class="img-thumbnail" width="79" alt="Maribel Acosta"
+							src="http://www.aifb.kit.edu/images/thumb/a/a4/FotoCV.jpg/158px-FotoCV.jpg" /><br/>
+						Maribel Acosta
+					</div>
+			  </li>
+			</ul>
+			<ul class="list-inline">
+			  <li>
+					<div>
 						<img class="img-thumbnail" width="79" alt="Benedikt Kämpgen"
 							src="http://www.aifb.kit.edu/images/c/c4/Benedikt_Kaempgen.JPG" /><br/>
 						Benedikt Kämpgen (user #1)
@@ -168,6 +215,13 @@
 						<img class="img-thumbnail" width="79" alt="Sebastian Speiser"
 							src="http://www.aifb.kit.edu/images/thumb/e/eb/Sebastian_smaller.jpg/158px-Sebastian_smaller.jpg" /><br/>
 						Sebastian Speiser (retired)
+					</div>
+			  </li>
+			  <li>
+					<div>
+						<img class="img-thumbnail" width="79" alt="Steffen Stadtmüller"
+							src="http://www.aifb.kit.edu/images/thumb/1/17/S_Stadtm.jpg/158px-S_Stadtm.jpg" /><br/>
+						Steffen Stadtmüller (retired)
 					</div>
 			  </li>
 			</ul>
@@ -196,6 +250,12 @@
 			<h2>News</h2>
 
 			<dl>
+			  <dt>2017-03-37</dt>
+			  <dd>Added frequently asked questions.</dd>
+			  <dt>2017-01-31</dt>
+			  <dd>Added links to data sources.</dd>
+			  <dt>2016-05-20</dt>
+			  <dd>Version 0.9.10 available as part of a closed beta program.</dd>
 			  <dt>2015-09-30</dt>
 			  <dd>Version 0.9.6 available as part of a closed beta program.</dd>
 			  <dt>2015-05-23</dt>
